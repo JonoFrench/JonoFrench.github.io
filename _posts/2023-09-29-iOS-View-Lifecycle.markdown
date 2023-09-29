@@ -1,12 +1,20 @@
 ---
 layout: post
-title:  "UIKit View Lifecycle"
+title:  "UIKit View Controller Lifecycle"
 date:   2023-09-29 13:00:05 +0300
-categories: swift development
+categories: swift development iOS
 ---
-The lifecycle of a UIView
+The lifecycle of a UIViewController
 
-#viewDidLoad
+# loadView
+
+{% highlight swift %}
+    override func loadView() {
+        super.loadView()
+}
+{% endhighlight %}
+
+# viewDidLoad
 
 {% highlight swift %}
     override func viewDidLoad() {
@@ -14,7 +22,7 @@ The lifecycle of a UIView
 }
 {% endhighlight %}
 
-#viewDidLayoutSubviews
+# viewDidLayoutSubviews
 
 {% highlight swift %}
     override func viewDidLayoutSubviews() {
@@ -23,7 +31,7 @@ The lifecycle of a UIView
 }
 {% endhighlight %}
 
-#viewWillAppear
+# viewWillAppear
 
 {% highlight swift %}
     override func viewWillAppear(_ animated: Bool) {
@@ -32,7 +40,7 @@ The lifecycle of a UIView
 }
 {% endhighlight %}
 
-#viewDidAppear
+# viewDidAppear
 
 {% highlight swift %}
     override func viewDidAppear(_ animated: Bool) {
@@ -41,7 +49,7 @@ The lifecycle of a UIView
 }
 {% endhighlight %}
 
-#viewWillDisappear
+# viewWillDisappear
 
 {% highlight swift %}
     override func viewWillDisappear(_ animated: Bool) {
@@ -50,7 +58,7 @@ The lifecycle of a UIView
 }
 {% endhighlight %}
 
-#viewDidDisappear
+# viewDidDisappear
 
 {% highlight swift %}
     override func viewDidDisappear(_ animated: Bool) {
@@ -59,7 +67,7 @@ The lifecycle of a UIView
 }
 {% endhighlight %}
 
-#deinit
+# deinit
 
 {% highlight swift %}
     override func deinit() {
