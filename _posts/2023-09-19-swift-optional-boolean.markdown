@@ -4,7 +4,9 @@ title:  "Swift Optional Boolean"
 date:   2023-09-19 13:02:05 +0300
 categories: swift development
 ---
-I finally found a use for an optional boolean in swift
+I finally found a use for an optional boolean in swift....
+
+Well I say a use, this is for a button that doesn't work first time. Like if you where creating an annoying popup advert this first time you hit mute or dismiss nothing happens. The user will think it's his fat finger and you get an extra half a second of eyeball on the screen before the user hits it again. Really annoying....
 
 
 {% highlight swift %}
