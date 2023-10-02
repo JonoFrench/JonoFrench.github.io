@@ -23,10 +23,10 @@ email: jaypeeff@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is my site to blog about iOS development, photography and more.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jonofrench.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jaypeeff
 github_username:  JonoFrench
-
+cv: /download/Jonathan_French_2023.pdf
 # Build settings
 theme: minima
 plugins:
