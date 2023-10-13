@@ -88,6 +88,19 @@ override func viewWillAppear(_ animated: Bool) {
 }
 {% endhighlight %}
 
+# viewIsAppearing
+
+1. In iOS17 Apple have introduced a new method
+2. The view has been added to the view herarchy but is not yet onscreen.
+3. As the view has been laid out we can rely on all sizes and traits, is a great place to update any UI just before the view appears on screen.
+
+{% highlight swift %}
+override func viewIsAppearing(_ animated: Bool) {
+  super.viewIsAppearing(animated)
+  enableConstraintsForWidth(traitCollection.horizontalSizeClass)
+}
+{% endhighlight %}
+
 # viewWillLayoutSubviews
 
 1. Called to notify the view controller that its view is about to layout its subviews.
