@@ -1,0 +1,236 @@
+
+---
+layout: post
+title:  "Understanding `Self`, `self`, and `.self` in Swift (Without Going Crazy)"
+date:   2025-01-06 10:00:00 +0300
+categories: swift development
+---
+
+Swift feels beautifully simple—until you meet **`Self`**, **`self`**, and **`.self`**.
+They look almost identical, but they play *very* different roles.
+
+This post untangles them once and for all.
+
+---
+
+# ✅ **1. `self` — The Current Instance**
+
+`self` is the simplest of the trio.
+It refers to **the current instance of a type**.
+
+You use it when you need to:
+
+### **(1) Access properties or methods explicitly**
+
+```swift
+struct Person {
+    var name: String
+
+    func printName() {
+        print(self.name)
+    }
+}
+```
+
+Often Swift lets you omit `self`, but you *must* use it when there’s ambiguity:
+
+```swift
+struct Counter {
+    var count: Int
+
+    mutating func increment(to count: Int) {
+        self.count = count   // without self, this would assign the parameter to itself
+    }
+}
+```
+
+### **(2) Capture “self” in closures**
+
+```swift
+class ViewController {
+    func load() {
+        someAsyncCall { [weak self] in
+            self?.doSomething()
+        }
+    }
+}
+```
+
+### ✔️ TL;DR for `self`
+
+> **`self` = “the current instance”**
+
+---
+
+# ✅ **2. `Self` — The Dynamic Type**
+
+Capital-S **`Self`** refers to **the type of the current instance**, not the instance itself.
+
+This is incredibly useful when writing:
+
+* **protocol requirements**
+* **fluent APIs**
+* **factory methods**
+* **initializers that return the same type**
+
+### **Example: fluent APIs**
+
+```swift
+class Animal {
+    func clone() -> Self {
+        return Self.init()
+    }
+
+    required init() {}
+}
+```
+
+Here, `Self` is not `Animal`.
+If you subclass:
+
+```swift
+class Dog: Animal { }
+```
+
+Then calling:
+
+```swift
+let d = Dog().clone()
+print(type(of: d)) // Dog, not Animal
+```
+
+Swift uses the *dynamic* type.
+
+### **Example: Protocols**
+
+```swift
+protocol Copyable {
+    func copy() -> Self
+}
+```
+
+Any type adopting `Copyable` must return *its own type* — not just the protocol.
+
+### ✔️ TL;DR for `Self`
+
+> **`Self` = “the actual runtime type of this instance”**
+> Useful for dynamic return types and protocol requirements.
+
+---
+
+# ✅ **3. `.self` — The Value That Represents a Type**
+
+`.self` gives **the value of a type itself**, not an instance.
+
+This is used:
+
+### **(1) To get a metatype (type object)**
+
+```swift
+let type: String.Type = String.self
+```
+
+`String.self` is a *value* representing the type `String`—a “metatype.”
+
+Useful in generics or when passing types as arguments:
+
+```swift
+func createInstance<T>(_ type: T.Type) -> T? {
+    return type.init()
+}
+
+let int = createInstance(Int.self)
+```
+
+### **(2) To refer to the current instance explicitly**
+
+You can also use `.self` on instances (rare):
+
+```swift
+let x = 42
+print(x.self)  // 42
+```
+
+### **(3) To disambiguate between type and instance members**
+
+```swift
+struct MyStruct {
+    static let value = 10
+    let value = 20
+
+    func test() {
+        print(value)          // 20
+        print(Self.value)     // 10 (static)
+        print(self.value)     // 20 (instance)
+    }
+}
+```
+
+`.self` appears here in `Self` or type references.
+
+### ✔️ TL;DR for `.self`
+
+> **`.self` = “give me the type as a value” (or “the instance as a value”)**
+
+---
+
+# 🧠 **Quick Summary Table**
+
+| Syntax  | Meaning                                              | Example                          |
+| ------- | ---------------------------------------------------- | -------------------------------- |
+| `self`  | Current instance                                     | `self.property`, `self.method()` |
+| `Self`  | The dynamic *type* of the current instance           | `func clone() -> Self`           |
+| `.self` | A value that represents either a type or an instance | `MyType.self`, `x.self`          |
+
+---
+
+# 🧪 **Examples That Show the Difference Clearly**
+
+### Example A — `self` vs `Self`
+
+```swift
+class A {
+    func whoAmI() {
+        print(Self.self)  // prints type A
+        print(self)       // prints instance of A
+    }
+}
+```
+
+### Example B — `.self` with types
+
+```swift
+let t1 = Int.self       // type value
+let t2 = String.self
+print(t1)               // Int
+```
+
+### Example C — factory initializer
+
+```swift
+class Shape {
+    required init() {}
+
+    class func make() -> Self {
+        return Self.init()
+    }
+}
+
+class Square: Shape { }
+
+let sq = Square.make()
+print(type(of: sq))     // Square
+```
+
+---
+
+# 🎯 Final Mental Model
+
+* **`self`** → the object
+* **`Self`** → the type of the object
+* **`Type.self`** → a value that represents a type
+* **`instance.self`** → the instance itself as a value
+
+Once you keep those distinctions straight, Swift’s metatype system becomes a superpower instead of a source of confusion.
+
+---
