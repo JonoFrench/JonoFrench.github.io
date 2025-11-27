@@ -5,9 +5,6 @@ date:   2025-01-02 10:00:00 +0300
 categories: swift development
 ---
 
-
-# **Understanding Access Modifiers in Swift: A Clear, Practical Guide**
-
 When building apps in Swift, you quickly discover that organizing and protecting your code is just as important as making it work. That’s where **access control** comes in. Swift’s access modifiers help you manage which parts of your code can be seen or used outside of their defining context—whether that’s a file, a module, or a specific scope.
 
 Swift provides five levels of access: **open**, **public**, **internal**, **fileprivate**, and **private**. In this post, we’ll break down each one, show when to use them, and give practical examples to make everything click.

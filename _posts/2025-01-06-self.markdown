@@ -4,9 +4,6 @@ title:  "Understanding `Self`, `self`, and `.self` in Swift (Without Going Crazy
 date:   2025-01-06 10:00:00 +0300
 categories: swift development
 
----
-# **Understanding `Self`, `self`, and `.self` in Swift (Without Going Crazy)**
----
 Swift feels beautifully simple—until you meet **`Self`**, **`self`**, and **`.self`**.
 They look almost identical, but they play *very* different roles.
 
