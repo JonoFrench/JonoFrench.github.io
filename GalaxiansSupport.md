@@ -7,3 +7,7 @@ Retro Galaxians, Retro Invaders, Blasteroids, Vibe Chess, Tetroids, !
 Thanks for playing.
 
 J.
+
+Vibe Chess pieces by Maciej Świerczek
+https://www.figma.com/community/file/971870797656870866/chess-simple-assets
+
