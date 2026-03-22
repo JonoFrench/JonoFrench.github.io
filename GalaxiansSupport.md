@@ -1,4 +1,4 @@
-## iPhone App Support
+## iPhone / iPad App Support
 
 Retro Galaxians, Retro Invaders, Blasteroids, Vibe Chess, Tetroids, !
 
