@@ -1,6 +1,6 @@
 ## iPhone / iPad App Support
 
-Retro Galaxians, Retro Invaders, Blasteroids, Vibe Chess, Tetroids, !
+Retro Galaxians, Retro Invaders, Blasteroids, Vibe Chess, Tetroids, Bad Starz!
 
 #Please email jaypeeff@gmail.com with any issues, bugs or questions you have with the App.
 
