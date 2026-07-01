@@ -1,3 +1,3 @@
-# Apps
+# iOS Apps
 
-redirect_to: /apps/
+redirect_to: /apps/index.html
