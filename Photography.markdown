@@ -1,3 +1,3 @@
 # Photography
 
-[Open the website](./photos/)
+redirect_to: /photos/

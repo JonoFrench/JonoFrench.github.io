@@ -1,3 +1,3 @@
 # Apps
 
-[Open the website](./apps/)
+redirect_to: /apps/
