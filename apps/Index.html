@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Jonathan French | iOS Developer</title>
+
+    <meta name="description"
+          content="Beautiful games and apps for iPhone and iPad.">
+
+    <meta name="theme-color" content="#000000">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/icons/favicon.png">
+
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <canvas id="background-canvas"></canvas>
+
+    <!-- Navigation -->
+    <app-navbar></app-navbar>
+
+    <main>
+
+        <!-- Hero -->
+
+        <section class="hero">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    Independent iOS Developer
+                </p>
+
+                <h1>
+                    Beautiful Apps.<br>
+                    Crafted for Apple Platforms.
+                </h1>
+
+                <p class="hero-text">
+                    I build elegant, intuitive games and applications
+                    for iPhone and iPad.
+                </p>
+
+                <a href="#apps" class="button primary">
+                    Explore My Apps
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Apps -->
+
+        <section id="apps">
+
+            <div class="container">
+
+                <header class="section-header">
+
+                    <h2>Apps</h2>
+
+                    <p>
+                        Designed with care, built with Swift,
+                        and inspired by Apple's design philosophy.
+                    </p>
+
+                </header>
+
+                <div id="app-grid" class="app-grid">
+
+                    <!-- Populated by JavaScript -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- About -->
+
+        <section>
+
+            <div class="container narrow">
+
+                <header class="section-header">
+
+                    <h2>About</h2>
+
+                </header>
+
+                <p>
+                    I'm Jonathan French, an independent iOS developer
+                    creating games and utility apps with a focus on
+                    performance, simplicity and beautiful design.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <app-footer></app-footer>
+
+    <!-- Components -->
+
+    <script type="module" src="components/navbar.js"></script>
+    <script type="module" src="components/footer.js"></script>
+
+    <!-- Scripts -->
+
+    <script type="module" src="js/app.js"></script>
+
+</body>
+</html>
