@@ -1,4 +1,4 @@
-## iPhone / iPad App Support
+## App Support
 
 Retro Galaxians, Retro Invaders, Blasteroids, Vibe Chess, Tetroids, Bad Starz!
 
