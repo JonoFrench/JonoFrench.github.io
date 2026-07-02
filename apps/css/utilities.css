@@ -1,0 +1,40 @@
+@layer utilities;
+
+@layer utilities {
+
+.glass{
+
+    background:var(--glass-background);
+
+    backdrop-filter:var(--glass-blur);
+
+    border:1px solid var(--glass-border);
+
+}
+
+.flow > * + *{
+
+    margin-top:var(--space-lg);
+
+}
+
+.text-centre{
+
+    text-align:center;
+
+}
+
+.visually-hidden{
+
+    position:absolute;
+
+    width:1px;
+    height:1px;
+
+    overflow:hidden;
+
+    clip:rect(0 0 0 0);
+
+}
+
+}

@@ -1,0 +1,188 @@
+/* ==========================================================
+   Jonathan French Apps
+   Design Tokens
+   ========================================================== */
+
+:root {
+
+    /*=========================================================
+      Colours
+    =========================================================*/
+
+    --color-background: #000000;
+
+    --color-surface: #111111;
+    --color-surface-light: #1C1C1E;
+    --color-card: #161616;
+
+    --color-border: rgba(255,255,255,.08);
+
+    --color-text: #FFFFFF;
+    --color-text-secondary: #A1A1A6;
+    --color-text-tertiary: #6E6E73;
+
+    --color-primary: #0A84FF;
+    --color-primary-hover: #3395FF;
+
+    --color-success: #30D158;
+    --color-warning: #FFD60A;
+    --color-danger: #FF453A;
+
+    /*=========================================================
+      Gradients
+    =========================================================*/
+
+    --gradient-background:
+        radial-gradient(
+            circle at top,
+            #14203A 0%,
+            #081018 35%,
+            #000000 100%
+        );
+
+    --gradient-card:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.05),
+            rgba(255,255,255,.02)
+        );
+
+    /*=========================================================
+      Typography
+    =========================================================*/
+
+    --font-family:
+        "SF Pro Display",
+        "Inter",
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        sans-serif;
+
+    --font-mono:
+        ui-monospace,
+        SFMono-Regular,
+        Menlo,
+        monospace;
+
+    /* Font Sizes */
+
+    --font-xs: .75rem;
+    --font-sm: .875rem;
+    --font-base: 1rem;
+    --font-lg: 1.125rem;
+    --font-xl: 1.5rem;
+    --font-2xl: 2rem;
+    --font-3xl: 3rem;
+    --font-4xl: 4rem;
+    --font-5xl: 5rem;
+
+    /* Responsive Titles */
+
+    --hero-size:
+        clamp(3.5rem, 8vw, 6rem);
+
+    --section-title:
+        clamp(2rem, 4vw, 3.5rem);
+
+    --card-title:
+        clamp(1.3rem, 2vw, 1.8rem);
+
+    /* Font Weights */
+
+    --weight-light: 300;
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+
+    /* Line Heights */
+
+    --line-tight: 1.1;
+    --line-normal: 1.5;
+    --line-loose: 1.8;
+
+    /*=========================================================
+      Spacing
+    =========================================================*/
+
+    --space-2xs: .25rem;
+    --space-xs: .5rem;
+    --space-sm: .75rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --space-3xl: 4rem;
+    --space-4xl: 6rem;
+    --space-5xl: 8rem;
+
+    /*=========================================================
+      Layout
+    =========================================================*/
+
+    --container-width: 1200px;
+    --container-narrow: 760px;
+
+    --section-padding:
+        clamp(5rem, 10vw, 9rem);
+
+    --navbar-height: 72px;
+
+    /*=========================================================
+      Radius
+    =========================================================*/
+
+    --radius-sm: 12px;
+    --radius: 24px;
+    --radius-lg: 32px;
+    --radius-xl: 40px;
+    --radius-pill: 999px;
+
+    /*=========================================================
+      Shadows
+    =========================================================*/
+
+    --shadow-small:
+        0 4px 12px rgba(0,0,0,.20);
+
+    --shadow:
+        0 20px 50px rgba(0,0,0,.35);
+
+    --shadow-large:
+        0 40px 90px rgba(0,0,0,.45);
+
+    /*=========================================================
+      Blur
+    =========================================================*/
+
+    --blur: blur(20px);
+
+    /*=========================================================
+      Borders
+    =========================================================*/
+
+    --border:
+        1px solid var(--color-border);
+
+    /*=========================================================
+      Animation
+    =========================================================*/
+
+    --duration-fast: .2s;
+    --duration: .35s;
+    --duration-slow: .7s;
+
+    --ease:
+        cubic-bezier(.22,.61,.36,1);
+
+    /*=========================================================
+      Z Layers
+    =========================================================*/
+
+    --z-background: -1;
+    --z-content: 1;
+    --z-navbar: 1000;
+    --z-modal: 2000;
+
+}
