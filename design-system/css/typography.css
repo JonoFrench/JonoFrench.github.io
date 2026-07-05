@@ -1,0 +1,51 @@
+.hero-copy {
+
+    max-width: 38rem;
+
+}
+
+.hero-eyebrow {
+
+    display: inline-block;
+
+    margin-bottom: 1.5rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: .18em;
+
+    color: var(--color-primary);
+
+    font-size: .8rem;
+
+    font-weight: 600;
+
+}
+
+.hero h1 {
+
+    margin-bottom: 2rem;
+
+    font-size: clamp(4rem,8vw,6.5rem);
+
+    line-height: .95;
+
+    letter-spacing: -.05em;
+
+}
+
+.hero h1 span {
+
+    display: block;
+
+    color: var(--color-text-secondary);
+
+}
+
+.hero p {
+
+    font-size: 1.35rem;
+
+    line-height: 1.7;
+
+}

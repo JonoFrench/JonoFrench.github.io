@@ -1,33 +1,17 @@
-@layer layout;
-
-@layer layout {
-
-.container{
-
-    width:min(var(--width-page),calc(100% - 48px));
-
-    margin-inline:auto;
-
+.container {
+    width: min(1100px, 90%);
+    margin-inline: auto;
 }
 
-.container.narrow{
-
-    width:min(var(--width-content),calc(100% - 48px));
-
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 4rem;
+    align-items: center;
 }
 
-section{
-
-    padding-block:var(--space-5xl);
-
-}
-
-.grid{
-
-    display:grid;
-
-    gap:var(--space-xl);
-
-}
-
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
