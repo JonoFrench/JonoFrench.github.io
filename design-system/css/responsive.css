@@ -58,3 +58,22 @@ display:none;
 }
 
 }
+@media (max-width: 900px) {
+
+    .phone {
+
+        width: 260px;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .phone {
+
+        width: 220px;
+
+    }
+
+}

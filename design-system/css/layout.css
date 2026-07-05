@@ -15,3 +15,25 @@
     display: flex;
     align-items: center;
 }
+
+.hero-background {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: -1;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(10,132,255,.18),
+            transparent 45%
+        ),
+        radial-gradient(
+            circle at bottom right,
+            rgba(94,92,230,.12),
+            transparent 50%
+        );
+
+}
