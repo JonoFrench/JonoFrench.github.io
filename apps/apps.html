@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+        <title>Apps</title>
+
+<!-- CSS -->
+    <link rel="stylesheet" href="../design-system/css/reset.css">
+    <link rel="stylesheet" href="../design-system/css/base.css">
+    <link rel="stylesheet" href="../design-system/css/tokens.css">
+    <link rel="stylesheet" href="../design-system/css/typography.css">
+    <link rel="stylesheet" href="../design-system/css/variables.css">
+    <link rel="stylesheet" href="../design-system/css/layout.css">
+    <link rel="stylesheet" href="../design-system/css/animations.css">
+    <link rel="stylesheet" href="../design-system/css/responsive.css">
+    <link rel="stylesheet" href="../design-system/css/components.css">
+    <link rel="stylesheet" href="../design-system/css/utilities.css">
+   <link rel="stylesheet" href="../design-system/components/phone.css">
+   <link rel="stylesheet" href="../design-system/css/device.css">
+   <link rel="stylesheet" href="../design-system/css/app-card.css">
+   <link rel="stylesheet" href="../design-system/components/footer.css">
+ 
+    ...
+
+</head>
+
+<body>
+
+ 
+    <main>
+   <canvas id="background-canvas"></canvas>
+   <app-navbar></app-navbar>
+
+        <section class="page-header">
+
+            <div class="container">
+
+                <h1>Apps</h1>
+
+                <p>
+
+                    Games and utilities built for Apple's platforms.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <div class="container">
+
+                <app-grid></app-grid>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <app-footer></app-footer>
+
+
+   <!-- Components -->
+
+    <script type="module" src="../design-system/components/navbar.js"></script>
+    <script type="module" src="../design-system/components/footer.js"></script>
+    <script type="module" src="../design-system/components/device.js"></script>
+    <script type="module" src="../design-system/js/app-data.js"></script>
+    <script type="module" src="../design-system/js/app-grid.js"></script>
+    <script type="module" src="../design-system/js/app-card.js"></script>
+
+   <!-- <script type="module" src="../design-system/components/footer.js"></script> -->
+    
+    <!-- Scripts -->
+
+    <script type="module" src="../design-system/js/app.js"></script>    
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+[
+    {
+        "id": "bad-starz",
+        "title": "Bad Starz",
+        "subtitle": "Retro arcade shooter",
+        "description": "Battle your way through waves of enemy ships in this fast-paced arcade shooter inspired by the classics.",
+        "status": "Published",
+        "platforms": [
+            "iPhone",
+            "iPad"
+        ],
+        "technologies": [
+            "Swift",
+            "SwiftUI",
+            "Game Center"
+        ],
+        "image": "assets/images/bad-starz/hero.webp",
+        "icon": "/assets/icons/bad-starz.png",
+        "url": "/apps/bad-starz/",
+        "appStore": "https://apps.apple.com/gb/app/bad-starz/id6761826598"
+    },
+    {
+        "id": "blasteroids",
+        "title": "Blasteroids",
+        "subtitle": "Retro arcade shooter",
+        "description": "Battle your way through waves of enemy ships in this fast-paced arcade shooter inspired by the classics.",
+        "status": "Published",
+        "platforms": [
+            "iPhone",
+            "iPad"
+        ],
+        "technologies": [
+            "Swift",
+            "SwiftUI",
+            "Game Center"
+        ],
+        "image": "assets/images/bad-starz/hero.webp",
+        "icon": "/assets/icons/bad-starz.png",
+        "url": "/apps/bad-starz/",
+        "appStore": "https://apps.apple.com/gb/app/bad-starz/id6761826598"
+    }
+]

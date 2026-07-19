@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-GB">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,7 +23,9 @@
     <link rel="stylesheet" href="../design-system/css/responsive.css">
     <link rel="stylesheet" href="../design-system/css/components.css">
     <link rel="stylesheet" href="../design-system/css/utilities.css">
+    <link rel="stylesheet" href="../design-system/css/site-header.css">
    <link rel="stylesheet" href="../design-system/components/phone.css">
+   <link rel="stylesheet" href="../design-system/css/device.css">
    <link rel="stylesheet" href="../design-system/components/footer.css">
  
     <!-- Favicon -->
@@ -31,13 +34,15 @@
 </head>
 
 <body>
+    
     <main>
 
     <!-- Animated Background -->
     <canvas id="background-canvas"></canvas>
 
     <!-- Navigation -->
-    <app-navbar></app-navbar>
+    <site-header></site-header>
+
 
  <section class="hero">
 
@@ -52,8 +57,9 @@
             </p>
 
             <h1 class="hero-title">
-                Retro Apps.<br>
-                Built for Apple.
+                Apps and Games <br>
+                Crafted with Code and<br>
+                Creativity.
             </h1>
 
             <p class="hero-description">
@@ -61,46 +67,39 @@
             </p>
 
             <div class="hero-actions">
-                <a href="#apps" class="button primary">
+                <a href="apps.html" class="button primary">
                     Explore Apps
                 </a>
             </div>
 
         </div>
 
-<div class="hero-device">
+        <app-device
+        type="iphone"
+        image="assets/images/bad-starz/hero.webp"
+        alt="Bad Starz">
+        </app-device>
 
-    <div class="phone">
 
-        <div class="phone-frame">
 
-            <div class="dynamic-island"></div>
-
-            <div class="phone-screen">
-
-                <img
-                    src="assets/images/bad-starz/hero.webp"
-                    alt="Bad Starz">
-
-            </div>
-
-            <div class="phone-reflection"></div>
-
-        </div>
 
     </div>
 
-</div>
-
 </section>
+<app-footer></app-footer>
+
+
 </main>
 
-    <app-footer></app-footer>
 
     <!-- Components -->
 
-    <script type="module" src="../design-system/components/navbar.js"></script>
+    <script type="module" src="../design-system/components/site-header.js"></script>
     <script type="module" src="../design-system/components/footer.js"></script>
+    <script type="module" src="../design-system/components/device.js"></script>
+    <script type="module" src="../design-system/js/app-data.js"></script>
+    <script type="module" src="../design-system/js/app-grid.js"></script>
+
    <!-- <script type="module" src="../design-system/components/footer.js"></script> -->
     
     <!-- Scripts -->

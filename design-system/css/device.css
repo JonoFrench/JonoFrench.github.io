@@ -1,0 +1,149 @@
+/*==========================================================
+Device
+==========================================================*/
+
+.device {
+
+    position: relative;
+
+    perspective: 1200px;
+
+}
+
+.device--iphone {
+
+    width: 300px;
+
+    aspect-ratio: 9 / 19.5;
+
+}
+
+.device-float {
+
+    animation:
+        float 8s ease-in-out infinite;
+
+}
+
+/*==========================================================
+Frame
+==========================================================*/
+
+.device-frame {
+
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 52px;
+
+    background: linear-gradient(145deg,#666,#222);
+
+}
+
+/*==========================================================
+Screen
+==========================================================*/
+
+.device-screen {
+
+    position: absolute;
+
+    inset: 8px;
+
+    overflow: hidden;
+
+    border-radius: 44px;
+
+    background: black;
+
+}
+
+.device-screen img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+/*==========================================================
+Dynamic Island
+==========================================================*/
+
+.dynamic-island {
+
+    position: absolute;
+
+    top: 14px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 122px;
+
+    height: 34px;
+
+    background: black;
+
+    border-radius: 999px;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    padding-right: 16px;
+
+}
+
+.camera {
+
+    width: 12px;
+
+    height: 12px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(circle,#333,#111);
+
+}
+
+/*==========================================================
+Reflection
+==========================================================*/
+
+.device-reflection {
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    border-radius: inherit;
+
+    background:
+        linear-gradient(
+            120deg,
+            rgba(255,255,255,.18),
+            transparent 20%,
+            transparent 70%,
+            rgba(255,255,255,.08)
+        );
+
+}
+
+.app-card-device {
+
+    display: flex;
+
+    justify-content: center;
+
+}
